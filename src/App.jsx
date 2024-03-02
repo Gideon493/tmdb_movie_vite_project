@@ -1,5 +1,5 @@
 import { useEffect, useState, createContext } from "react";
-import { Movies, Home, NavBar } from "./assets/components";
+import { Movies, Home, NavBar } from "./index";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const API_URL = 'http://www.omdbapi.com?apikey=92e40431';
@@ -29,12 +29,12 @@ const App = () => {
 
   return (
 
-    <div className="bg-slate-950 p-3">
+    <div className="bg-slate-950 p-4 h-svh">
       <Router>
         <NavBar />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/movies" element={<Movies movies={movies} searchTerm={searchTerm} setSearchTerm={setSearchTerm} handleSubmit={handleSubmit} />} />
+          {/* <Route path="/" element={<Home />} /> */}
+          <Route path="/" element={<Movies movies={movies} searchTerm={searchTerm} setSearchTerm={setSearchTerm} handleSubmit={handleSubmit} />} />
         </Routes>
       </Router>
     </div>

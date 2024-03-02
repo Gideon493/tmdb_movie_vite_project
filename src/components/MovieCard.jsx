@@ -7,7 +7,7 @@ const MovieCard = ({ movie }) => {
     //const { movie } = useContext(AppContext);
     return (
 
-        <div className="bg-slate-950 rounded-lg p-2 shadow-lg text-yellow-500 hover:scale-105 duration-200">
+        <div className="bg-slate-950 rounded-lg p-2 shadow-lg text-yellow-500 hover:scale-105 duration-200 ">
             <img src={movie.Poster} alt="Card image cap" className="rounded-lg" />
             <div>
                 <h3 className="uppercase font-sans">{movie.Type}</h3>

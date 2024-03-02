@@ -7,8 +7,8 @@ const NavBar = () => {
                 <h2><span className=" font-bold font-mono text-blue-600 text-4xl">Gid</span><span className="text-pink-600 text-4xl">Movies</span></h2>
             </div>
             <div className="">
-                <Link to="/" className="text-2xl inline-block text-rose-600">Home</Link>
-                <Link to="/movies" className="text-2xl">Movies</Link>
+                {/* <Link to="/" className="text-2xl inline-block text-rose-600">Home</Link> */}
+                {/* <Link to="/" className="text-2xl">Movies</Link> */}
             </div>
         </div>
     );
